@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">add</string>
+    <string name="most_favorite">Most Favorite</string>
+    <string name="my_list">App List</string>
+    <string name="title">title_temp</string>
+    <string name="internet_error">"Ethernet Error - please check your connection and reload app"</string>
+    <string name="movies_qr">Movies QR</string>
+    <string name="load_more">Load more</string>
+    <string name="genre">Genre</string>
+    <string name="rating">Rating </string>
+    <string name="link">link</string>
+    <string name="released_date">Released date </string>
+
+    <string name="story_full">A spinoff of The Fate of the Furious, focusing on Johnsons US Diplomatic Security Agent Luke Hobbs forming an unlikely alliance with Stathams Deckard Shaw.</string>
+    <string name="story">story</string>
+    <string name="release_year">Release Year </string>
+    <string name="trailer">Watch Trailer</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryActivityBackgroundLight">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_movies_qr"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorPrimaryTextYellow"
+                    android:text="@string/movies_qr"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:gravity="center"
+
+                    android:id="@+id/txt_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorPrimaryTextYellow"
+                    android:text="@string/my_list"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/txt_most"
+                        android:textColor="@color/colorPrimaryTextYellow"
+                        android:layout_height="wrap_content"
+                        android:textSize="26sp"
+                        android:layout_margin="3dp"
+                        android:text="@string/most_favorite"
+                        android:layout_weight="1"
+                        android:layout_width="0dp" />
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/add"
+        android:elevation="6dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        app:layout_anchor="@id/btn_add"
+        app:layout_anchorGravity="center"
+        android:id="@+id/btn_add_txt"
+        />
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:visibility="invisible"
+        android:id="@+id/qrCodeScanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
